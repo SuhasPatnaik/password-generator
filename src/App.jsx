@@ -13,7 +13,7 @@ function App() {
 
   const handleCopy = (message) => {
     setCopyMessage(message);
-    setTimeout(() => setCopyMessage(""), 1000); // Clear message after 2 seconds
+    setTimeout(() => setCopyMessage(""), 1000);
   };
 
   return (

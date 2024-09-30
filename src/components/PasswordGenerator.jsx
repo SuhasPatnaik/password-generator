@@ -32,7 +32,6 @@ const PasswordGenerator = ({
 
   const handleCopy = async () => {
     try {
-      // Use the passwordRef to select and copy the text
       passwordRef.current.select();
       await navigator.clipboard.writeText(passwordRef.current.value);
       onCopy("Password copied!");
@@ -49,7 +48,7 @@ const PasswordGenerator = ({
         placeholder="Password"
         readOnly
         value={generatedPassword}
-        ref={passwordRef} // Attach the ref to the input
+        ref={passwordRef}
       />
       <button
         className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0"
